@@ -4,6 +4,28 @@ Este é um rascunho de documentação técnica voltado para usuários da platafo
 
 **Guia de Ciclo de Vida e Versionamento de Schemas de Eventos**
 
+```mindmap
+  root((Plataforma de Eventos))
+    Governança
+      Ciclo de Vida
+        Draft
+        Active
+        Deprecated
+        Retired
+      Versionamento
+        Major (Quebrante)
+        Minor (Evolução)
+        Path-based (Ex: /v2/)
+    Contratos (Canônico)
+      Schema Registry
+      Backward Compatibility
+      Validação de Dados
+    Atores
+      Produtores (Emitem)
+      Consumidores (Reagem)
+      Tópicos/Bus (Transportam)
+```
+
 ## **1\. Introdução**
 
 Este guia destina-se a todos os produtores e consumidores de eventos que utilizam a nossa plataforma de mensageria assíncrona. O objetivo é estabelecer um padrão claro para a evolução dos contratos de dados (schemas), garantindo a estabilidade operacional e o desacoplamento real entre microsserviços.
